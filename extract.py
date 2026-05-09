@@ -9,7 +9,7 @@ os.makedirs("bronze", exist_ok=True)
 
 def categoria(categoria):
     try:
-        url = f"https://world.openfoodfacts.org/api/v2/search?categories_tags=en:{categoria}&page_size=1000"
+        url = f"https://world.openfoodfacts.org/api/v2/search?categories_tags=en:{categoria}&page_size=100"
         headers = {"User-Agent": "food-data-pipeline/1.0 (andretavaresreis@gmail.com)"}
         response = requests.get(url, headers=headers)
 
