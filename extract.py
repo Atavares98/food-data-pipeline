@@ -25,7 +25,7 @@ def categoria(categoria):
     except requests.exceptions.RequestException as e:
         print(f"Erro com a API {e}")
 
-categoria("meats")
+categoria("vegetable")
 
 
 
